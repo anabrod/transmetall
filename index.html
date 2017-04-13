@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <title>transmetall</title>
@@ -10,16 +10,541 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+         ::-webkit-input-placeholder {
+            color: rgb(201, 200, 200);
+        }
+
+         ::-moz-placeholder {
+            color: rgb(201, 200, 200);
+        }
+        /* Firefox 19+ */
+
+         :-moz-placeholder {
+            color: rgb(201, 200, 200);
+        }
+        /* Firefox 18- */
+
+         :-ms-input-placeholder {
+            color: rgb(201, 200, 200);
+        }
+    </style>
 </head>
 
 <body style="opacity:0">
-    <div class="asd">asdas</div>
-    asdasdasdasdasdasdasdasdasd
-    <script src="http://localhost:35729/livereload.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/template-style.min.css">
+    <div class="header">
+        <div class="container header_container">
+            <div class="row">
+                <div class="header__logo col-md-4 col-sm-7 col-xs-7">
+                    <img src="images/header/header__logo.png" alt="">
+                </div>
+                <div class="language col-md-1 col-sm-2 col-xs-2">
+                    <div class="switch">
+                        <a href="">
+                            <div class="switch__box switch__box-active">
+                                RU
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="switch__box">
+                                ENG
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="header__phone col-md-4">
+                    <div class="phone">+7 (987) 654-32-10</div>
+                    <div class="collback"><a>Заказать обратный звонок</a></div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="menu-secret">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-6">
+                    <div class="header__phone">
+                        <div class="phone">+7 (987) 654-32-10</div>
+                        <div class="collback"><a>Заказать обратный звонок</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-xs-1 " style="float:right">
+                    <div class="search__btn2" id="search-toggle2">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-xs-1" style="float:right">
+                    <div class="mobile-menu switcher"><i class="fa fa-align-justify" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="container menu-container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <ul>
+                        <li><a>О-компании</a></li>
+                        <li><a>продукция</a></li>
+                        <li><a>услуги</a></li>
+                        <li><a>новости</a></li>
+                        <li><a>документы</a></li>
+                        <li><a>партнёры</a></li>
+                        <li><a>контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="search__btn" id="search-toggle">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search__secret" id="search-toggle-open">
+        <div class="container search__secret-container">
+            <div class="row">
+                <div class="col-md-11">
+                    <input type="text" placeholder="ПОИСК">
+                </div>
+
+                <div class="col-md-1"><a href=""><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu mobile start -->
+    <div class="menu_wrap">
+        <div id="adhere-wrap">
+            <div id="adhere">
+                <div class="switcher"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="mainmenu menu2">
+                <li><a>О-компании</a></li>
+                <li><a>продукция</a></li>
+                <li><a>услуги</a></li>
+                <li><a>новости</a></li>
+                <li><a>документы</a></li>
+                <li><a>партнёры</a></li>
+                <li><a>контакты</a></li>
+            </ul>
+
+
+        </nav>
+        <div class="totopbtn"></div>
+    </div>
+    <!-- menu mobile finish -->
+
+    <div class="slider">
+        <div style="position:relative">
+            <div class="container" style="position: relative">
+                <div class="row">
+
+
+
+                </div>
+                <!--<a class="arrow-left " href="#myCarousel" data-slide="prev">
+                    < </a>
+
+                        <a class="arrow-right " href="#myCarousel" data-slide="next"> > </a>-->
+
+            </div>
+        </div>
+
+        <div id="myCarousel" class="carousel slide slider-castom" data-interval="7000" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- item start -->
+                <div class="active item">
+                    <div class="slider-img" style=" background-image: url(images/slider/slider__item1.png);">
+                        <div class="container slider-container" style="z-index:20">
+                            <div class="slider__text">
+                                <div class="slider__text_title">Высокое качество,<br />современные технологии</div>
+                                <div class="slider__text_content">Мы заботимся о своих клиентах</div>
+                            </div>
+                            <a>
+                                <div class="slider__btn">
+                                    подробнее
+                                </div>
+                            </a>
+
+                        </div>
+                        <div id="parallelogram" style="position: absolute;z-index:10;top: 0px;"></div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+                <!-- item start -->
+                <div class="item">
+                    <div class="slider-img" style=" background-image: url(images/slider/slider__item1.png);">
+                        <div class="container slider-container" style="z-index:20">
+                            <div class="slider__text">
+                                <div class="slider__text_title">Высокое качество,<br />современные технологии</div>
+                                <div class="slider__text_content">Мы заботимся о своих клиентах</div>
+                            </div>
+                            <a>
+                                <div class="slider__btn">
+                                    подробнее
+                                </div>
+                            </a>
+
+                        </div>
+                        <div id="parallelogram" style="position: absolute;z-index:10;top: 0px;"></div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="product">
+        <div class="container product_container">
+            <div class="row">
+                <div class="col-md-12" style="text-align:center">
+                    <div class="title">
+                        Наша продукция
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 62px;">
+
+                <!-- item start -->
+                <div class="col-md-4">
+                    <div class="product__item">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-4 col-xs-4">
+                                <div class="content-centering block-decor">
+                                    <figure>
+                                        <div class="item__img_hover "><img src="images/product/product__icon_hov.png " alt=" "></div><img src="images/product/product__item1_image.png" alt="" width="100%"></figure>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-8 col-xs-8">
+                                <div class="product__title ">Руллонная оцинкованная сталь</div>
+                                <div class="product__text ">С другой стороны сложившаяся структура организации представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям</div>
+                                <div class="product__next ">подробнее<i class="fa fa-long-arrow-right " aria-hidden="true "></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+                <!-- item start -->
+                <div class="col-md-4 ">
+                    <div class="product__item ">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-4 col-xs-4">
+                                <div class="content-centering block-decor">
+                                    <figure>
+                                        <div class="item__img_hover "><img src="images/product/product__icon_hov.png " alt=" "></div><img src="images/product/product__item2_image.png" alt="" width="100%"></figure>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-8 col-xs-8">
+                                <div class="product__title ">сталь с полимерным покрытием</div>
+                                <div class="product__text ">Таким образом сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям</div>
+                                <div class="product__next ">подробнее<i class="fa fa-long-arrow-right " aria-hidden="true "></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+                <!-- item start -->
+                <div class="col-md-4 ">
+                    <div class="product__item ">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-4 col-xs-4">
+                                <div class="content-centering block-decor">
+                                    <figure>
+                                        <div class="item__img_hover "><img src="images/product/product__icon_hov.png " alt=" "></div><img src="images/product/product__item3_image.png" alt="" width="100%"></figure>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-8 col-xs-8">
+                                <div class="product__title ">профнастил</div>
+                                <div class="product__text ">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации модели развития</div>
+                                <div class="product__next ">подробнее<i class="fa fa-long-arrow-right " aria-hidden="true "></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+
+        <div class="about__left">
+            <div class="about__left-container">
+                <div class="title">
+                    О нас<br /><span>и наших партнёрах</span>
+                </div>
+                <div class="about__left_text">
+                    <p>
+                        С другой стороны сложившаяся структура организации представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию
+                        позиции играет важную роль в формировании направлений прогрессивного развития.
+                    </p>
+                    <p>
+                        Равным образом укрепление и развитие структуры требуют от нас анализа соответствующий условий активизации. Таким образом сложившаяся структура организации требуют от нас анализа системы обучения кадров.
+                    </p>
+                    <div class="product__next ">подробнее<i class="fa fa-long-arrow-right " aria-hidden="true "></i></div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="wraper_image1">
+            <div class="about__right about__right1 image1"><img src="images/about/partner__item1_logo.png" alt=""></div>
+        </div>
+        <div class="wraper_image1">
+            <div class="about__right about__right2 image1"><img src="images/about/partner__item2_logo.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="product">
+        <div class="container product_container">
+            <div class="row">
+                <div class="col-md-12" style="text-align:center">
+                    <div class="title">
+                        Новости компании
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 62px;">
+
+                <!-- item start -->
+                <div class="col-md-4">
+                    <div class="product2__item">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-5 col-xs-5">
+                                <div class="content-centering2 block-decor" style="	display: flex;
+                        	justify-content: center;
+                            align-items: center;
+                            width: 220px;
+                        	max-height: 153px;
+                        	overflow: hidden">
+                                    <figure>
+                                        <div class="item__img2_hover"><img src="images/news/news__item_hov.png" alt=" "></div><img src="images/news/news__item1_image.png" alt="" width="220px">
+                                        <div class="news__data">
+                                            <div class="news__data_1">
+                                                МАР
+                                            </div>
+                                            <div class="news__data_2">
+                                                24
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12 col-sm-7 col-xs-7">
+                                <div class="product__title ">Расширен спектр услуг компании</div>
+                                <div class="product__text ">С другой стороны сложившаяся структура организации представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям</div>
+                                <div class="product__next ">подробнее<i class="fa fa-long-arrow-right " aria-hidden="true "></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+                <!-- item start -->
+                <div class="col-md-4 ">
+                    <div class="product2__item ">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-5 col-xs-5">
+                                <div class="content-centering2 block-decor" style="	display: flex;
+                        	justify-content: center;
+                            align-items: center;
+                            width: 220px;
+                        	max-height: 153px;
+                        	overflow: hidden">
+                                    <figure>
+                                        <div class="item__img2_hover"><img src="images/news/news__item_hov.png" alt=" "></div><img src="images/news/news__item2_image.png" alt="" width="220px">
+                                        <div class="news__data">
+                                            <div class="news__data_1">
+                                                МАР
+                                            </div>
+                                            <div class="news__data_2">
+                                                10
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-7 col-xs-7">
+                                <div class="product__title ">трансметалл обновляет парк техники</div>
+                                <div class="product__text ">Таким образом сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям</div>
+                                <div class="product__next ">подробнее<i class="fa fa-long-arrow-right " aria-hidden="true "></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+                <!-- item start -->
+                <div class="col-md-4 ">
+                    <div class="product2__item ">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-5 col-xs-5">
+                                <div class="content-centering2 block-decor" style="	display: flex;
+                        	justify-content: center;
+                            align-items: center;
+                            width: 220px;
+                        	max-height: 153px;
+                        	overflow: hidden">
+                                    <figure>
+                                        <div class="item__img2_hover"><img src="images/news/news__item_hov.png" alt=" "></div><img src="images/news/news__item3_image.png" alt="" width="220px">
+                                        <div class="news__data">
+                                            <div class="news__data_1">
+                                                ФЕВ
+                                            </div>
+                                            <div class="news__data_2">
+                                                08
+                                            </div>
+                                        </div>
+                                </div>
+                                </figure>
+                            </div>
+                            <div class="col-md-12 col-sm-7 col-xs-7">
+                                <div class="product__title ">Расширен спектр услуг компании</div>
+                                <div class="product__text ">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации модели развития</div>
+                                <div class="product__next ">подробнее<i class="fa fa-long-arrow-right " aria-hidden="true "></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item finish -->
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa427614473b9c9ef815cbbd2465864dc275530a7b8f2deb5a3cd19e12a970b6f&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+
+    <div class="footer">
+        <div class="container footer-container">
+            <div class="row">
+
+
+                <div class="col-md-6">
+                    <div class="footer__logo">
+                        <img src="images/header/header__logo.png" alt="">
+                    </div>
+                    <div class="footer__phone">
+                        <div class="phone">+7 (987) 654-32-10</div>
+                        <div class="collback"><a>Заказать обратный звонок</a></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2 col-sm-4 col-xs-4 footer__left">
+                    <div class="footer__menu_title">Главное меню</div>
+                    <ul>
+                        <li><a>О-компании</a></li>
+                        <li><a>продукция</a></li>
+                        <li><a>услуги</a></li>
+                        <li><a>новости</a></li>
+                        <li><a>документы</a></li>
+                        <li><a>партнёры</a></li>
+                        <li><a>контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-8 col-xs-8 footer__left">
+                    <div class="footer__menu_title">Наша продукция</div>
+                    <div class="footer__product">
+                        <div class="block-decor" style="display:inline-block;
+                    	justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                    	max-height: 50px;
+                    	overflow: hidden;">
+                            <figure>
+                                <div class="item__img3_hover ">
+                                </div><img src="images/product/product__item1_image.png" alt="" width="50px">
+                            </figure>
+                        </div>
+                        <div class="footer__product_title">Руллонная оцинкованная сталь</div>
+                    </div>
+                    <div class="footer__product">
+                        <div class="block-decor" style="display:inline-block;
+                    	justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                    	max-height: 50px;
+                    	overflow: hidden;">
+                            <figure>
+                                <div class="item__img3_hover ">
+                                </div><img src="images/product/product__item2_image.png" alt="" width="50px">
+                            </figure>
+                        </div>
+                        <div class="footer__product_title">Сталь с полимерным покрытием</div>
+                    </div>
+                    <div class="footer__product">
+                        <div class="block-decor" style="display:inline-block;
+                    	justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                    	max-height: 50px;
+                    	overflow: hidden;">
+                            <figure>
+                                <div class="item__img3_hover ">
+                                </div><img src="images/product/product__item3_image.png" alt="" width="50px">
+                            </figure>
+                        </div>
+                        <div class="footer__product_title">Профнастил</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="container footer2-container">
+            <div class="col-md-3 footer2__left">© 2017 Все права защищены</div>
+            <div class="col-md-3 footer2__right">
+                <img src="images/footer/footer__logo_palitra.png" alt="">
+                <div class="footer2__palitra">cоздание и продвижение сайтов</div>
+                <div style="background-color: rgb(232, 232, 232);width: 88px;height: 31px;display: inline-block;float: right;margin-top: 20px;"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="http://localhost:35729/livereload.js "></script>
+    <script src="js/js.js "></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500 " rel="stylesheet ">
+    <link rel="stylesheet " href="font-awesome/css/font-awesome.min.css ">
+    <link rel="stylesheet " href="css/bootstrap.min.css ">
+    <link rel="stylesheet " href="css/template-style.min.css ">
 </body>
 
 </html>

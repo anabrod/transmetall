@@ -1,6 +1,674 @@
 body
     font-family: 'Fira Sans', sans-serif
     opacity: 1 !important
+li
+    list-style-type: none
+input
+    border: none
+    -webkit-highlight: none
+    -webkit-appearance: none
+    outline: none
+ul
+    margin-left: 0
+    padding-left: 15px
+    margin-bottom: 0px
+.about .product__next
+    bottom: 25px
+.menu-secret .phone
+    color: black
+.menu-secret .header__phone
+    float: left!important
+    margin-top: 10px!important
+    margin-right: 0px!important
+.collback a
+    cursor: pointer
+    color: #2dcab6
+    text-decoration: underline
+.about .product__next
+    position: absolute!important
+.search__btn2
+    display: inline-block
+    color: rgb(39, 38, 38)
+    cursor: pointer
+    & .fa-search
+        font-size: 21px
+.fa-align-justify
+    font-size: 21px
+.mobile-menu,.search__btn2
+    margin-top: 23px
+.mobile-menu:hover
+    color: #2dcab6!important
+    cursor: pointer
+.search__btn2:hover
+    color: #2dcab6!important
+@media screen and (min-width: 992px)
+    .menu-secret
+        display: none
+    .menu
+        display: block
+@media screen and (max-width: 991px)
+    .product__title
+        margin-top: 0px!important
+    .header_container .header__phone
+        display: none
+    .search__btn
+        display: none!important
+    .menu-secret
+        display: block
+    .menu
+        display: none
+    .about__left
+        width: 100%!important
+    .wraper_image1
+        width: 100%!important
+    .about .title
+        float: left!important
+        margin-left: 100px
+    .about__left_text
+        float: left!important
+        margin-left: 100px
+@media screen and (max-width: 1244px)
+    .about .title
+        float: right
+        margin-right: 40px!important
+    .about__left_text
+        float: right
+        margin-right: 40px!important
+        width: 70%!important
+        font-size: 14px!important
+    .about__left-container
+        width: 100%!important
+
+@media screen and (max-width: 1200px)
+    .menu li
+        margin-right: 40px!important
+    #parallelogram
+        width: 80%!important
+
+.fa-search
+    font-size: 16px
+
+.fa-arrow-circle-o-right
+    cursor: pointer
+    -moz-transition: color 350ms cubic-bezier(0.445, 0.050, 0.550, 0.950) 0ms
+    -o-transition: color 350ms cubic-bezier(0.445, 0.050, 0.550, 0.950) 0ms
+    -webkit-transition: color 350ms cubic-bezier(0.445, 0.050, 0.550, 0.950)
+    -webkit-transition-delay: 0ms
+    transition: color 350ms cubic-bezier(0.445, 0.050, 0.550, 0.950) 0ms
+    padding: 5px
+    font-size: 32px
+    color: #a6a6a6
+    margin-left: 40px
+    margin-top: 15px
+    &:hover
+        color: #333333
+.title
+    font-size: 60px
+    color: rgb(35, 33, 33)
+    text-transform: uppercase
+    padding: 0px 60px 27px 60px
+    border-bottom: 1px solid #2dcab6
+    display: inline-block
+    margin-top: 60px
+.search
+    &__secret
+        display: none
+        height: 71px
+        background-color: #f3f3f3
+    &__secret input
+        border: 0px
+        background-color: #f3f3f3
+        font-size: 24px
+        color: #272626
+        text-transform: uppercase
+        text-align: left
+        width: 100%
+        margin-top: 18px
+
+    &__btn
+        display: inline-block
+        position: absolute
+        right: 0px
+        top: 26px
+        padding: 0px 15px
+        color: rgb(39, 38, 38)
+        cursor: pointer
+    &__btn:hover
+        color: #2dcab6!important
+    &:hover
+        color: #2dcab6!important
+        cursor: pointer
 
 .container
     min-width: 600px
+.header
+    height: 120px
+    background-color: #2f2d2d
+    &__logo
+        margin-top: 25px
+    &__phone
+        background-image: url(../images/header/header__icon_phone.png)
+        background-repeat: no-repeat
+        background-position: 6px
+        padding-left: 40px
+        float: right
+        margin-right: -80px
+        margin-top: 33px
+.phone
+    font-size: 26px
+    color: rgb(255, 255, 255)
+    text-transform: uppercase
+.collback
+    margin-left: 20px
+    margin-top: -2px
+    & a
+        font-size: 14px
+        color: rgb(45, 202, 182)
+
+.language
+    float: right
+    margin-top: 42px
+    margin-right: 6px
+#parallelogram
+    border-top: 500px solid rgba(0,0,0,0.5)
+    border-right: 200px solid transparent
+    width: 70%
+.slider
+    &__text
+        border-left: 5px solid #2dcab6
+        padding-left: 20px
+    &__text_title
+        font-size: 48px
+        color: rgb(255, 255, 255)
+        text-transform: uppercase
+        font-weight: 400
+    &__text_content
+        font-size: 18px
+        color: rgb(255, 255, 255)
+    &__btn
+        font-size: 14px
+        color: rgb(254, 254, 254)
+        text-transform: uppercase
+        text-align: center
+        padding: 16px 39px
+        border: 2px solid #2dcab6
+        display: inline-block
+        text-decoration: none
+        cursor: pointer
+        margin-top: 30px
+    &-container
+        padding-top: 125px
+        position: relative
+
+.carousel-indicators .active
+    background-color: #2dcab6
+    border: 0px solid #2dcab6
+.carousel-indicators li
+    border: 0px solid #2dcab6
+    background-color: white
+.slider-img
+    height: 500px
+
+
+.product2
+    &__item
+        position: relative
+        margin-bottom: 30px
+    &__title
+        font-size: 18px
+        color: rgb(35, 33, 33)
+        text-transform: uppercase
+        margin-top: 24px
+        font-weight: 500
+    &__text
+        font-size: 14px
+        color: rgb(85, 85, 85)
+        margin-top: 16px
+        font-family: "Fira Sans"
+        font-weight: lighter
+        line-height: 25px
+    &__next
+        font-size: 18px
+        color: rgb(35, 33, 33)
+        text-transform: uppercase
+        padding: 7px 0px
+        border-bottom: 2px solid #2dcab9
+        display: inline-block
+        border-top: 2px solid transparent
+        position: absolute
+        bottom: 0px
+        font-weight: 500
+        cursor: pointer
+    &__next:hover
+        border-top: 2px solid #2dcab9!important
+    &__next i
+        margin-left: 20px
+.product
+    &__item
+        position: relative
+        margin-bottom: 15px
+    &__title
+        font-size: 18px
+        color: rgb(35, 33, 33)
+        text-transform: uppercase
+        margin-top: 24px
+        font-weight: 500
+    &__text
+        font-size: 14px
+        color: rgb(85, 85, 85)
+        margin-top: 16px
+        font-family: "Fira Sans"
+        font-weight: lighter
+        line-height: 25px
+    &__next
+        font-size: 18px
+        color: rgb(35, 33, 33)
+        text-transform: uppercase
+        padding: 7px 0px
+        border-bottom: 2px solid #2dcab9
+        display: inline-block
+        border-top: 2px solid transparent
+        bottom: 0px
+        font-weight: 500
+        cursor: pointer
+        margin-top: 15px
+    &__next:hover
+        border-top: 2px solid #2dcab9!important
+    &__next i
+        margin-left: 20px
+
+.content-centering
+	display:flex
+	justify-content: center
+    align-items: center
+    width: 100%
+	max-height: 359px
+	overflow: hidden
+
+.about
+    margin-top: 81px
+    &__left
+        width: 57%
+        height: 580px
+        background-image: url(../images/about/about_background.png)
+        background-size: cover
+        display: inline-block
+        float: left
+    &__left_text
+        width: 600px
+        margin-top: 35px
+        font-size: 16px
+        color: rgb(255, 255, 255)
+        line-height: 1.625
+        font-weight: lighter
+
+
+    &__right1
+        width: 100%
+        height: 290px
+        background-image: url(../images/about/partner__item1_background.png)
+        background-size: cover
+        display: inline-block
+        float: left
+    &__left-container
+        float: right
+        width: 710px
+        position: relative
+        height: 100%
+    &__left-container .product__next
+        color: white
+
+    &__right2
+        width: 100%
+        height: 290px
+        background-image: url(../images/about/partner__item2_background.png)
+        background-size: cover
+        display: inline-block
+        float: left
+    & .title
+        padding: 0px 32% 27px 0px!important
+        line-height: 40px!important
+        margin-top: 70px!important
+        color:white!important
+    & .title span
+        font-size: 24px!important
+    & img
+        max-width: 100%
+        max-height: 100%
+        vertical-align: middle
+.about__right
+    text-align: center
+    position: relative
+    vertical-align: middle
+    text-align: center
+    white-space: nowrap
+.about__right:after
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+img
+    max-width: 100%
+    max-height: 100%
+    vertical-align: middle
+
+.block-decor
+    background-color: #ccc
+    cursor: pointer
+figure
+    position: relative
+.item__img3
+    width: 50px
+    height: 50px
+    z-index: 1
+    position: relative
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+    &_hover
+        position: absolute
+        background-color: rgba(45, 202, 182, 0.6)
+        width: 100%
+        height: 100%
+        opacity: 0
+        z-index: 2
+        top: 0
+        left: 0
+    &_hover img
+        position: absolute
+        top: 39%
+        left: 41%
+
+    &_hover:hover
+        opacity: 1!important
+
+
+.item__img2
+    width: 100%
+    height: 359px
+    z-index: 1
+    position: relative
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+    &_hover
+        position: absolute
+        background-color: rgba(45, 202, 182, 0.6)
+        width: 100%
+        height: 100%
+        opacity: 0
+        z-index: 2
+        top: 0
+        left: 0
+    &_hover img
+        position: absolute
+        top: 39%
+        left: 41%
+
+    &_hover:hover
+        opacity: 1!important
+
+
+.item__img
+    width: 100%
+    height: 359px
+    z-index: 1
+    position: relative
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+    &_hover
+        position: absolute
+        background-color: rgba(45, 202, 182, 0.6)
+        width: 100%
+        height: 100%
+        opacity: 0
+        z-index: 2
+        top: 0
+        left: 0
+    &_hover img
+        position: absolute
+        top: 40%
+        left: 40%
+
+    &_hover:hover
+        opacity: 1!important
+
+
+.switch
+    border-width: 1px
+    border-color: rgb(241, 241, 241)
+    border-style: solid
+    background-color: rgb(245, 245, 245)
+    border-radius: 50px
+    top: 41px
+    width: 74px
+    height: 36px
+    &__box
+        display: inline-block
+        font-size: 13px
+        text-align: center
+        padding-top: 7px
+        border-width: 1px
+        border-color: rgb(247, 247, 247)
+        border-style: solid
+        border-radius: 50%
+        background-color: rgb(247, 247, 247)
+        width: 34px
+        height: 34px
+
+    & a
+        color: rgb(85, 85, 85)
+        text-decoration: none
+        text-transform: uppercase
+
+    &__box-active
+        border-width: 1px
+        border-color: rgb(247, 247, 247)
+        border-style: solid
+        border-radius: 50%
+        background-color: rgb(45, 202, 182)!important
+        width: 34px
+        height: 34px
+        color: rgb(255, 255, 255)!important
+
+
+.menu
+    &-secret
+        height: 71px
+        background-color: rgb(255, 255, 255)
+        width: 100%
+
+    &-container
+        position: relative
+
+    & li
+        display: inline-block
+        padding-top: 24px
+        margin-right: 77px
+        border-bottom: 5px solid transparent
+        padding-bottom: 20px
+        cursor: pointer
+    & li:last-child
+        margin-right: 0px!important
+    & li:hover
+        border-bottom: 5px solid #2dcab6!important
+    & li:hover a
+        color: #2dcab6!important
+    & li a
+        text-decoration: none
+        font-size: 16px
+        color: rgb(39, 38, 38)
+        text-transform: uppercase
+        cursor: pointer
+.news__data
+    width: 45px
+    display: inline-block
+    position: absolute
+    top: 0px
+    left: 0px
+    &_1
+        height: 26px
+        background-color: #2dcab6
+        color: white
+        font-size: 14px
+        display: block
+        text-align: center
+        padding-top: 3px
+    &_2
+        height: 26px
+        background-color: #474747
+        color: white
+        font-size: 14px
+        display: block
+        text-align: center
+        padding-top: 3px
+
+.map
+    margin-top: 30px
+.footer
+    background-image: url(../images/footer/footer_background.png)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    padding-bottom: 22px
+    &__logo
+        margin-top: 25px
+    &__phone
+        background-image: url(../images/header/header__icon_phone.png)
+        background-repeat: no-repeat
+        background-position: 6px
+        padding-left: 40px
+        margin-top: 33px
+    &__menu_title
+        font-size: 18px
+        color: rgb(255, 255, 255)
+        text-transform: uppercase
+        padding-bottom: 15px
+        border-bottom: 1px solid #2dcab6
+    & ul
+        margin-top: 15px
+        padding-left: 0px
+    &__left
+        margin-top: 28px
+    &__left a
+        font-size: 16px
+        color: rgb(201, 200, 200)
+        cursor: pointer
+    & li
+        line-height: 30px
+    & a:hover
+        color: #2dcab6!important
+        text-decoration: none
+    &__product_title
+        display: inline-block
+        font-size: 16px
+        color: rgb(201, 200, 200)
+        vertical-align: top
+        margin-top: 15px
+        margin-left: 20px
+        text-decoration: none
+    &__product
+        margin-top: 20px
+    &__product:hover .footer__product_title
+        color: #2dcab6!important
+        cursor: pointer
+    &__product:hover .item__img3_hover
+        opacity: 1 !important
+
+.footer2
+    background-color: #0a0a0a
+    height: 153px
+    &__palitra
+        font-size: 11px
+        font-family: "Arial"
+        color: rgb(241, 241, 241)
+        text-align: right
+
+
+    &__left
+        float: left
+        font-size: 16px
+        font-family: "Arial"
+        color: rgb(201, 200, 200)
+        margin-top: 90px
+
+    &__right
+        float: right
+        margin-top: 20px
+.wraper_image1
+    height: 290px
+    overflow: hidden
+    width: 42.401391%
+.image1
+    -moz-transition: all 1s ease-out
+    -o-transition: all 1s ease-out
+    -webkit-transition: all 1s ease-out
+
+
+.image1:hover
+    -webkit-transform: scale(1.1)
+    -moz-transform: scale(1.1)
+    -o-transform: scale(1.1)
+
+
+.menu_wrap.opened
+    transition: all 0.5s ease
+.menu_wrap
+    background: white
+    height: 100%
+    left: -300px
+    position: fixed
+    top: 0
+    transform: translateZ(0px)
+    transition: all 0.5s ease 0s
+    width: 250px
+    z-index: 1000
+#adhere-wrap
+    width: 100%
+    position: relative
+    z-index: 980
+.fa-times
+    padding: 14px 18px
+    background-color: #2dcab6
+    color: white
+    font-size: 26px
+
+.mainmenu.menu2
+    padding: 0px 0px
+.mainmenu.menu2
+    list-style: none
+.mainmenu.menu2 li a, .mainmenu.menu2 li div
+    font-weight: 100
+    color: #fff
+    display: block
+    padding: 20px 20px
+    margin-bottom: 2px
+.mainmenu.menu2 li
+    border-top: 1px solid #e8e8e8
+.mainmenu.menu2 li
+    cursor: pointer
+    border-bottom: 1px solid #e8e8e8
+
+.mainmenu.menu2 li:hover
+    background-color: #2dcab6!important
+.mainmenu.menu2 li:hover a
+    color: white!important
+.mainmenu.menu2 li a
+    cursor: pointer
+    font-weight: 400
+    font-size: 16px
+    text-transform: uppercase
+    color: black
+    text-decoration: none
+    outline: none
+    -webkit-transition: all 0.05s ease 0.1s, color 0.1s ease 0.1s
+    -moz-transition: all 0.05s ease 0.1s, color 0.1s ease 0.1s
+    -o-transition: all 0.05s ease 0.1s, color 0.1s ease 0.1s
+    transition: all 0.2s linear, color 0.2s linear
+.mainmenu.menu2 li.active div
+    color: #fff
+    background: rgba(255,255,255,0.2)
