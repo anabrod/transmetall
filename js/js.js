@@ -10,13 +10,6 @@ $("#search-toggle-open").toggle('slow')
 });
 });
 
-$(document).ready(function() {
-$("#menu-toggle").click(function () {
-$("#menu-toggle-open").toggle('slow')
-});
-});
-
-
 jQuery(document).ready(function(){
   var
       menuWrap = jQuery('.menu_wrap')
